@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume — Sultan Muhammad Khan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --text: #0f1222;
+        --muted: #555b77;
+        --accent: #6b74ff;
+        --rule: #e6e8f2;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
+        color: var(--text);
+        margin: 0;
+        padding: 24px;
+        background: #fff;
+      }
+      .page {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        align-items: end;
+        border-bottom: 2px solid var(--rule);
+        padding-bottom: 16px;
+        margin-bottom: 20px;
+      }
+      .name {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .headline {
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        justify-content: flex-end;
+      }
+      .links a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      /* Sections */
+      section {
+        margin: 18px 0;
+      }
+      h2 {
+        font-size: 14px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 10px;
+      }
+      .summary {
+        color: #20243a;
+        line-height: 1.6;
+      }
+
+      .list {
+        display: grid;
+        gap: 8px;
+      }
+      .item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 6px;
+      }
+      .item-title {
+        font-weight: 600;
+      }
+      .item-meta {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .bullets {
+        margin: 8px 0 0 0;
+        padding-left: 18px;
+      }
+      .bullets li {
+        margin-bottom: 6px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px 16px;
+      }
+      .skills-grid strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      /* Print */
+      @media print {
+        body {
+          padding: 0;
+        }
+        header {
+          margin-top: 8px;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div>
+          <div class="name">Sultan Muhammad Khan</div>
+          <div class="headline">
+            AI Student • Game Developer • Indie Builder
+          </div>
+        </div>
+        <nav class="links">
+          <a
+            href="https://aka-shiro10.github.io/"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Portfolio</a
+          >
+          <a
+            href="https://github.com/aka-shiro10"
+            target="_blank"
+            rel="noreferrer noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sultan-muhammad-khan-8a5b73244/"
+            target="_blank"
+            rel="noreferrer noopener"
+            >LinkedIn</a
+          >
+          <!-- Add these when ready: <span>•</span><a href="mailto:your@email">Email</a><span>•</span><span>+92-XXX</span> -->
+        </nav>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p class="summary">
+          I’m an AI student and full‑stack hobbyist focused on game and mobile
+          development. I design and ship prototypes, indie games, and small apps
+          using Unity (C#), Python, and modern mobile frameworks. My work blends
+          gameplay systems (including ML‑driven agents and multiplayer
+          prototypes) with pragmatic engineering—clean code, quick iteration,
+          and a strong focus on player experience. I enjoy collaborating on
+          freelance and part‑time projects that challenge my problem‑solving
+          skills and help me learn something new every week.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <strong>Programming</strong>
+            Python, C#, JavaScript/TypeScript
+          </div>
+          <div>
+            <strong>Game Dev</strong>
+            Unity, Physics, AI/Agents, Cinemachine, NavMesh
+          </div>
+          <div>
+            <strong>Web & Mobile</strong>
+            Node.js/Express, REST APIs, modern mobile frameworks
+          </div>
+          <div>
+            <strong>AI/ML</strong>
+            Data prep, classical ML, basics of DL/agents
+          </div>
+          <div>
+            <strong>Tools</strong>
+            Git/GitHub, npm, basic Docker, Linux
+          </div>
+          <div>
+            <strong>Soft</strong>
+            Rapid prototyping, collaboration, problem‑solving
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="list">
+          <div class="item">
+            <div class="item-title">KeyMech — Software Intern</div>
+            <div class="item-meta">
+              Jul 2024 – Sep 2024 · Wah Cantt · 320 hrs
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>
+              Delivered cross‑platform mobile features and integrated REST APIs
+              for field maintenance workflows.
+            </li>
+            <li>
+              Built production app builds and assisted with deployments and
+              environment configuration.
+            </li>
+            <li>
+              Collaborated with field teams to translate requirements into
+              testable, shippable tasks.
+            </li>
+          </ul>
+
+          <div class="item" style="margin-top: 10px">
+            <div class="item-title">Seasons Foods — Audit Intern</div>
+            <div class="item-meta">Aug 2023 – Sep 2023 · Lahore · 240 hrs</div>
+          </div>
+          <ul class="bullets">
+            <li>
+              Performed inventory audits and reconciliations; improved accuracy
+              across multiple product lines.
+            </li>
+            <li>
+              Documented processes and identified opportunities for variance
+              reduction and control.
+            </li>
+          </ul>
+
+          <div class="item" style="margin-top: 10px">
+            <div class="item-title">Sybrid — Data/ML Intern</div>
+            <div class="item-meta">May 2025 – Jul 2025</div>
+          </div>
+          <ul class="bullets">
+            <li>
+              Built curated datasets for ETL pipelines and stood up a vector
+              database for internal search.
+            </li>
+            <li>
+              Prototyped a RAG chatbot to accelerate knowledge retrieval for
+              internal users.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="list">
+          <div class="item">
+            <div class="item-title">Add your top 2–4 projects with links</div>
+            <div class="item-meta">Unity / Python / Web · GitHub / Demo</div>
+          </div>
+          <ul class="bullets">
+            <li>1–2‑line project summary focused on problem and outcome.</li>
+            <li>
+              Highlight gameplay systems, ML/agents, or API integrations as
+              relevant.
+            </li>
+            <li>
+              Include links: GitHub repo, live demo, video, or store page.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="list">
+          <div class="item">
+            <div class="item-title">BS Artificial Intelligence</div>
+            <div class="item-meta">
+              Pak‑Austria Fachhochschule Institute of Applied Sciences and
+              Technology · 10/2022 – Present
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>
+              Relevant coursework: Machine Learning, Data Structures,
+              Algorithms, Linear Algebra, Probability.
+            </li>
+            <li>
+              Academic projects: Add 1–2 notable ML/game projects with a
+              one‑line impact.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Achievements & Certifications</h2>
+        <ul class="bullets">
+          <li>
+            Add hackathons, competitions, certifications (Unity, Google, etc.),
+            scholarships, or awards.
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

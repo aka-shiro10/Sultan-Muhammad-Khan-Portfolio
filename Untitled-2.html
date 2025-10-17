@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar Chart</title>
+    <style>
+      body {
+        background-color: #0d0d0d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      canvas {
+        max-width: 500px;
+        max-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="radarChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById("radarChart");
+
+      new Chart(ctx, {
+        type: "radar",
+        data: {
+          labels: ["Game Dev", "Web Dev", "AI"],
+          datasets: [
+            {
+              label: "",
+              data: [8, 6, 7],
+              fill: true,
+              backgroundColor: "rgba(0, 255, 0, 0.1)",
+              borderColor: "#00ff00",
+              pointBackgroundColor: "#00ff00",
+              pointBorderColor: "#00ff00",
+              pointHoverBackgroundColor: "#00ff00",
+              pointHoverBorderColor: "#00ff00",
+            },
+          ],
+        },
+        options: {
+          scales: {
+            r: {
+              angleLines: {
+                color: "rgba(0,255,0,0.3)",
+              },
+              grid: {
+                color: "rgba(0,255,0,0.3)",
+              },
+              pointLabels: {
+                color: "#00ff00",
+                font: {
+                  size: 14,
+                },
+              },
+              suggestedMin: 0,
+              suggestedMax: 10,
+              ticks: {
+                display: false,
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

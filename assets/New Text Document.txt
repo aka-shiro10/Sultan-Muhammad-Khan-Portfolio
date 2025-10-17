@@ -1,0 +1,2 @@
+.flex-col:nth-child(2) {
+  flex: 1.5;
