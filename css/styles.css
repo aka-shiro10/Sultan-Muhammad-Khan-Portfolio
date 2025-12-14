@@ -2029,3 +2029,213 @@ canvas {
   gap: 18px;
   justify-content: space-between;
 }
+
+/* Final Year Project Section Styles */
+.fyp-section {
+  background: linear-gradient(
+    135deg,
+    rgba(124, 134, 255, 0.05) 0%,
+    rgba(154, 123, 255, 0.05) 100%
+  );
+  border-radius: 16px;
+  padding: 3rem 2.25rem;
+  margin: 5rem auto;
+  border: 1px solid var(--border-subtle);
+}
+
+.fyp-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.fyp-card {
+  background: var(--surface-card);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: 1px solid rgba(154, 123, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(154, 123, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fyp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(124, 134, 255, 0.2),
+    0 0 0 1px rgba(154, 123, 255, 0.2);
+}
+
+.fyp-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fyp-card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-text);
+  background: linear-gradient(135deg, #9a7bff 0%, #7c86ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fyp-card__badge {
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 134, 255, 0.2) 0%,
+    rgba(154, 123, 255, 0.2) 100%
+  );
+  border: 1px solid rgba(154, 123, 255, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.fyp-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.fyp-card__section h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.fyp-card__section p {
+  color: var(--secondary-text);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.fyp-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.fyp-card__tags .tag {
+  padding: 0.45rem 1rem;
+  background: rgba(124, 134, 255, 0.15);
+  border: 1px solid rgba(124, 134, 255, 0.3);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--primary-text);
+  transition: all 0.2s ease;
+}
+
+.fyp-card__tags .tag:hover {
+  background: rgba(124, 134, 255, 0.25);
+  border-color: rgba(124, 134, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.fyp-card__list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--secondary-text);
+}
+
+.fyp-card__list li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.fyp-card__list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.fyp-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fyp-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+.fyp-card__meta strong {
+  color: var(--primary-text);
+  font-weight: 600;
+}
+
+.fyp-card__btn {
+  padding: 0.75rem 1.8rem;
+  background: linear-gradient(135deg, #7c86ff 0%, #9a7bff 100%);
+  border: 1px solid rgba(154, 123, 255, 0.3);
+  border-radius: 8px;
+  color: var(--primary-text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(124, 134, 255, 0.3);
+}
+
+.fyp-card__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(124, 134, 255, 0.4);
+  background: linear-gradient(135deg, #8892ff 0%, #a687ff 100%);
+}
+
+/* Responsive Design for FYP Section */
+@media (max-width: 768px) {
+  .fyp-section {
+    padding: 2rem 1.5rem;
+    margin: 3rem auto;
+  }
+
+  .fyp-card {
+    padding: 1.8rem;
+  }
+
+  .fyp-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fyp-card__title {
+    font-size: 1.6rem;
+  }
+
+  .fyp-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fyp-card__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
